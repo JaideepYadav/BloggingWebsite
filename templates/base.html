@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>{% block title %}My Blog{% endblock %}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MyBlog Home</title>
+  <link rel="stylesheet" href="../static/css/style.css"/>
 </head>
-
 <body>
-    <header>
-        Blogging  Website 
-    </header>
+  <header>
+    <h1>MyBlog</h1>
+    <nav>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+    </nav>
+  </header>
 
-    <main>
-        {% block content %}
-        {% endblock %}
-    </main>
-
-    <footer>
-        <p>&copy; 2025 My Blog</p>
-    </footer>
-
+  <main class="centered">
+    <h1>Welcome to MyBlog!</h1>
+    <p><h2>Read amazing blogs or write your own to inspire the world.</h2></p>
+    <h2><a href="login.html" class="btn">Start Writing</a></h2>
+  </main>
 </body>
-
 </html>
